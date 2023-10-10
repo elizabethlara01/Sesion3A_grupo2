@@ -11,14 +11,14 @@ public class Cuenta {
 		this.saldo = saldo;
 	}
 
-	public void ingresar(int i) {
-		// TODO Auto-generated method stub
+	public void ingresar(double i) {
+		this.setSaldo(this.getSaldo()+i);
 		
 	}
-
-	public Integer getSaldo() {
+				
+	public double getSaldo() {
 		
-		return 3000;
+		return saldo;
 	}
 	
 }
