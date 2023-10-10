@@ -17,12 +17,11 @@ public class Cuenta {
 	}
 				
 	public double getSaldo() {
-		return 0;
-		//return saldo;
+		return saldo;
 	}
 
 	public void retirar(double i) {
-		//this.setSaldo(this.getSaldo()+i);
+		this.setSaldo(this.getSaldo()+i);
 		
 	}
 	
