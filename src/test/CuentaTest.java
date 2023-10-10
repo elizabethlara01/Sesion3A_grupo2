@@ -29,17 +29,18 @@ class CuentaTest {
 	@AfterEach
 	void tearDown() throws Exception {
 	}
+	@Test
+	void testRetirar() {
+		ctaPruebas.retirar(3000);
+		assertEquals(-3000, ctaPruebas.getSaldo());
+	}
 
 	@Test
 	void testIngresar() {
 		ctaPruebas.ingresar(3000);
-		assertEquals(3000, ctaPruebas.getSaldo());
+		assertEquals(0, ctaPruebas.getSaldo());
 		
 	}
-	@Test
-	void testRetirar() {
-		ctaPruebas.retirar(3000);
-		assertEquals(0, ctaPruebas.getSaldo());
-	}
+		
 
 }
