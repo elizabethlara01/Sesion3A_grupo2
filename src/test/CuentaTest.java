@@ -39,7 +39,7 @@ class CuentaTest {
 	@Test
 	void testRetirar() {
 		ctaPruebas.retirar(3000);
-		assertEquals(3000, ctaPruebas.getSaldo());
+		assertEquals(0, ctaPruebas.getSaldo());
 	}
 
 }
